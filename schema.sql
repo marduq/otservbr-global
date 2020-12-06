@@ -681,6 +681,40 @@ CREATE TABLE IF NOT EXISTS `player_prey` (
 	`mcolumn` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- ----------------------------------------------------------
+
+-- Table structure `player_charms`
+--
+
+CREATE TABLE IF NOT EXISTS `player_charms` (
+	`player_guid` int(11) NOT NULL,
+	`charm_points` int(11) NOT NULL,
+	`charm_expansion` int(11) NOT NULL,
+	`rune_wound` int(11) NOT NULL,
+	`rune_enflame` int(11) NOT NULL,
+	`rune_poison` int(11) NOT NULL,
+	`rune_freeze` int(11) NOT NULL,
+	`rune_zap` int(11) NOT NULL,
+	`rune_curse` int(11) NOT NULL,
+	`rune_cripple` int(11) NOT NULL,
+	`rune_parry` int(11) NOT NULL,
+	`rune_dodge` int(11) NOT NULL,
+	`rune_adrenaline` int(11) NOT NULL,
+	`rune_numb` int(11) NOT NULL,
+	`rune_bless` int(11) NOT NULL,
+	`rune_scavenge` int(11) NOT NULL,
+	`rune_gut` int(11) NOT NULL,
+	`rune_low_blow` int(11) NOT NULL,
+	`rune_divine` int(11) NOT NULL,
+	`rune_vamp` int(11) NOT NULL,
+	`rune_void` int(11) NOT NULL,
+	`UsedRunesBit` int(11) NOT NULL,
+	`UnlockedRunesBit` int(11) NOT NULL,
+	`tracker list` int(11) NOT NULL
+
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 -- --------------------------------------------------------
 
 --
